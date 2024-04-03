@@ -26,7 +26,7 @@
 //     users: User[];
 // }
 
-export interface User {
+export interface Product {
     id: number;
     product_serial: number;
     product_variation_status: number;
@@ -56,9 +56,9 @@ export interface User {
     wishlist: any[]; // Adjust type as per actual structure
 }
 
-export interface UserAPIResponse {
+export interface ProductAPIResponse {
     success: boolean;
-    data: User[];
+    data: Product[];
 }
 
 // export interface Product {

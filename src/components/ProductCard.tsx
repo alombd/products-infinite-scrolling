@@ -1,8 +1,8 @@
-import { User } from "@/types/User";
+import { Product } from "@/types/Product";
 import Image from "next/image";
 
 type UserProps = {
-    user: User;
+    user: Product;
 };
 
 export default function UserCard({ user }: UserProps) {

@@ -1,5 +1,5 @@
 "use server";
-import { UserAPIResponse } from "@/types/User";
+import { UserAPIResponse } from "@/types/Product";
 
 export const getUsers = async (offset: number, limit: number) => {
     try {
