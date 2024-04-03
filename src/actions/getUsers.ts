@@ -1,5 +1,5 @@
 "use server";
-import { UserAPIResponse } from "@/types/Product";
+import { ProductAPIResponse } from "@/types/Product";
 
 export const getUsers = async (offset: number, limit: number) => {
     try {
@@ -7,8 +7,8 @@ export const getUsers = async (offset: number, limit: number) => {
         const url = `https://apiparis.parisbeautybd.com/api/featured-products/new-arrival?page=${offset}`;
         console.log("page number", offset);
         const response = await fetch(url);
-        const data = (await response.json()) as UserAPIResponse;
-        // console.log("projects", data.data?.data);
+        const data = (await response.json()) as any;
+        //console.log("projects", data.data.data);
         return data.data?.data;
     } catch (error: unknown) {
         console.log(error);
